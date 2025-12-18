@@ -1,15 +1,50 @@
-<!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Web Dockerizada</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Cena de navidad">
+    <meta property="og:description" content="Migol es tonto">
+    <meta property="og:image" content="/static/juernes.jpg">
+    <meta name="title" content="Cena de navidad">
+    <meta name="description" content="Migol es tonto">
+    <title>Cena de navidad Juernes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
-    <h1>Hola 🚀</h1>
-    <p>Web servida desde Docker + Flask</p>
-    <button onclick="saludar()">Click</button>
 
+<body>
+    <header>
+        <h1>Cena de navidad Juernes</h1>
+    </header>
+    <section class="countdown" id="countdown">
+        <div class="time-box">
+            <div class="time" id="days">0</div>
+            <div class="label">Días</div>
+        </div>
+        <div class="time-box">
+            <div class="time" id="hours">0</div>
+            <div class="label">Horas</div>
+        </div>
+        <div class="time-box">
+            <div class="time" id="minutes">0</div>
+            <div class="label">Min</div>
+        </div>
+        <div class="time-box">
+            <div class="time" id="seconds">0</div>
+            <div class="label">Seg</div>
+        </div>
+    </section>
+    <img src="/static/juernes.jpg" alt="Imagen Juernes" class="hero-image" />
+    <a href="https://chat.whatsapp.com/JjOlgMZRED72FiE6eaxTK5?mode=hqrc" class="whatsapp" target="_blank"
+        aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <footer>
+        © <span id="year"></span> Juernes. Todos los derechos reservados.
+        </br> Migol es tonto
+    </footer>
     <script src="/static/script.js"></script>
 </body>
+
 </html>
